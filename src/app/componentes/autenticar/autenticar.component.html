@@ -1,0 +1,13 @@
+<h2>Iniciar Sesión</h2>
+<form action="">
+  <div>
+    <Label>Usuario: </Label>
+    <input type="text" name="nusuario" [(ngModel)]="usuario.nusuario">
+  </div>
+  <div>
+    <Label>Contraseña: </Label>
+    <input type="password" name="password" [(ngModel)]="usuario.password">
+  </div>
+  <div> <button (click)='entrar()'>Entrar</button></div>
+  <div> <a routerLink='/registro'>¿Aún no tienes una cuenta?</a></div>
+</form>

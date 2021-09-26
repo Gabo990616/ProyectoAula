@@ -1,0 +1,35 @@
+<h2>Registro</h2>
+<form action="">
+    <div>
+        <Label>Usuario: </Label>
+        <input type="text" name="nusuario" [(ngModel)]="usuario.nusuario">
+    </div>
+    <div>
+        <Label>Nombre Real: </Label>
+        <input type="text" name="nombre" [(ngModel)]="usuario.nombre">
+    </div>
+    <div>
+        <Label>Email: </Label>
+        <input type="email" name="email" [(ngModel)]="usuario.email">
+    </div>
+    <div>
+        <Label>Contraseña: </Label>
+        <input type="password" name="password" [(ngModel)]="usuario.password">
+    </div>
+    <div>
+        <Label>Repetir Contraseña: </Label>
+        <input type="password" name="repetir" [(ngModel)]="repetir">
+    </div>
+    <div>
+        <Label>País: </Label>
+        <input type="text" name="pais" [(ngModel)]="usuario.pais">
+    </div>
+    <div>
+        <Label>Universidad: </Label>
+        <select name="" id="" name="universidad" [(ngModel)]="usuario.universidad">
+            <option value="">UCI</option>
+            <option value="">UNICESAR</option>
+        </select>
+    </div>
+    <button (click)='registrar()'>Registrarse </button>
+</form>

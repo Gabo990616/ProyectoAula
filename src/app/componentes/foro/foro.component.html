@@ -1,0 +1,10 @@
+<app-usuarios></app-usuarios>
+<div>
+  <button><a routerLink='/publicar'>+Publicar</a></button>
+  <h2>Temas actuales</h2>
+  <ul class="heroes">
+    <li *ngFor="let tema of temas" (click)="onSelect(tema)">
+      <span class="badge">{{tema.titulo}}</span>
+    </li>
+  </ul>
+</div>

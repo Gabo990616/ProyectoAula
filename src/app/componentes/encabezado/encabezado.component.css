@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+    font-size: medium;
+}
+.ini{
+    font-family: broadway;
+    padding: 10px;
+    color: rgb(17, 44, 68);
+
+}
+.foro{
+    margin-left: 40%;
+    color: black;
+        font-family: 'arial';
+        padding: 10px;
+        font-size: 20px;
+}
+.reg{
+  margin-left: 30%;
+  padding: 10px;
+  font-family: 'georgia';
+  color: rgb(13, 10, 24);
+}
+.aut{
+    margin-left: 2%;
+    padding: 10px;
+color: rgb(13, 10, 24);
+font-family: 'georgia';
+}
+div{
+    background-color: rgb(222, 223, 191);
+    padding: 10px;
+    display: flex;
+}
+/*div a:hover {
+    background-color: rgb(199, 151, 151);
+    color: rgba(17, 9, 9, 0.795);
+}*/
+
+div a.active {
+    background-color: #d4caaf;
+    color: rgb(8, 3, 3);}

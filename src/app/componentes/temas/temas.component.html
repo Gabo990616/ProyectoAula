@@ -1,0 +1,17 @@
+<app-usuarios></app-usuarios>
+<section class="temas" >
+    <div class="autor">
+        <label >{{tema.usuario.nusuario}}</label><br>
+        <label>{{tema.usuario.fechareg}} </label>
+    </div>
+    <div class="tema" *ngIf="tema">
+        <label>{{tema.titulo}}</label><br>
+        <label>{{tema.contenido}}</label><br>
+        <label>{{tema.fechapub}}</label>
+    </div>
+</section>
+<section class="respuesta">
+    <label >Responder</label><br>
+    <textarea name="" id="" cols="80" rows="10"></textarea><br>
+    <button>Responder</button>
+</section>
