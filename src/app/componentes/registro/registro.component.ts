@@ -37,4 +37,10 @@ export class RegistroComponent implements OnInit {
       } else alert('Las contraseñas no coinciden');
     } else alert('Llene todos los campos');
   }
+
+
+
+  clear(){
+    this.usuarioService.clear();
+  }
 }

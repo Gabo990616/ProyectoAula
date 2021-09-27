@@ -13,7 +13,8 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { TemasComponent } from './componentes/temas/temas.component';
 import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 import { FormsModule } from '@angular/forms';
-
+import { IgxCarouselModule, IgxSliderModule } from 'igniteui-angular';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -27,13 +28,17 @@ import { FormsModule } from '@angular/forms';
     PieComponent,
     EncabezadoComponent,
     UsuariosComponent,
-      ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    IgxCarouselModule,
+    IgxSliderModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

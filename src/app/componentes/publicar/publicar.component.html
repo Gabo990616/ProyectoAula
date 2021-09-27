@@ -1,13 +1,14 @@
 <h2>Crear un tema</h2>
 <form action="">
-    <div>
-        <Label>Titulo: </Label>
-        <input type="text" class="tit" name="titulo" [(ngModel)]="tema.titulo">
-    </div>
-    <div>
-        <Label>Contenido: </Label>
+  <div>
+    <Label>Titulo: </Label>
+    <input type="text" class="tit" name="titulo" [(ngModel)]="tema.titulo">
+  </div>
+  <div>
+    <Label>Contenido: </Label>
 
-    </div>
-    <div><textarea  id="" cols="100" rows="10" name="contenido" [(ngModel)]="tema.contenido"></textarea></div>
-    <div> <button tipe='button' (click)='add()'>Publicar</button></div>
+  </div>
+  <div><textarea id="" cols="100" rows="10" name="contenido" [(ngModel)]="tema.contenido"></textarea></div>
+  <div> <button tipe='button'  (click)='add()'>Publicar</button></div>
+  <div><button type="button" (click)='clear()'>Borrar todos los temas</button></div>
 </form>

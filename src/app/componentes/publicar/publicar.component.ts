@@ -36,10 +36,14 @@ export class PublicarComponent implements OnInit {
   add() {
     if (this.tema.titulo != undefined && this.tema.contenido != undefined) {
       this.tema.usuario = this.logusuario[0];
-      this.tema.fechapub=this.fecha;
-      alert(this.tema.contenido+this.tema.fechapub+this.tema.titulo+this.tema.usuario.nusuario+this.tema.usuario.fechareg+'as');
-      /*this.temaservice.post(this.tema);
-      this.router.navigate(['/foro']);*/
+      this.tema.fechapub = this.fecha;
+      this.tema.identificador = this.temas.length;
+      this.tema.respuestas = [];
+      this.temaservice.post(this.tema);
+      this.router.navigate(['/foro']);
     } else alert('Llene todos los campos');
+  }
+  clear() {
+    this.temaservice.clear();
   }
 }

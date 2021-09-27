@@ -1,22 +1,22 @@
-section{
-padding: 50px;
+section {
+  padding: 50px;
 }
-.autor{
-    float:left;
-    height:5em;
-    width: 4em;
+.autor {
+  float: left;
+  height: 5em;
+  width: 4em;
 }
- .tema{
-     margin-left:7%;
-     width: 30em;
- }
- div{
-     border:2px solid black;
-     padding: 7px;
- }
- button{
-     float: right;
- }
- .respuesta{
-     width: fit-content;
- }
+.tema {
+  margin-left: 7%;
+  width: 30em;
+}
+div {
+  border: 2px solid black;
+  padding: 7px;
+}
+button {
+  float: right;
+}
+.respuesta {
+  width: fit-content;
+}

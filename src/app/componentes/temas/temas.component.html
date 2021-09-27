@@ -1,17 +1,26 @@
 <app-usuarios></app-usuarios>
-<section class="temas" >
-    <div class="autor">
-        <label >{{tema.usuario.nusuario}}</label><br>
-        <label>{{tema.usuario.fechareg}} </label>
-    </div>
-    <div class="tema" *ngIf="tema">
-        <label>{{tema.titulo}}</label><br>
-        <label>{{tema.contenido}}</label><br>
-        <label>{{tema.fechapub}}</label>
-    </div>
+<section class="temas">
+  <div class="autor">
+    <label>{{tema.usuario.nusuario}}</label><br>
+    <label>{{tema.usuario.fechareg}} </label>
+  </div>
+  <div class="tema">
+    <label>{{tema.titulo}}</label><br>
+    <label>{{tema.contenido}}</label><br>
+    <label>{{tema.fechapub}}</label>
+  </div>
+</section>
+<section>
+  <label>Respuestas</label>
+  <ul>
+    <li *ngFor="let respuesta of respuestas">
+      <span class="badge">por {{respuesta.usuario.nusuario}} el {{respuesta.fechapub}}</span><br>
+      <span>{{respuesta.contenido}}</span>
+    </li>
+  </ul>
 </section>
 <section class="respuesta">
-    <label >Responder</label><br>
-    <textarea name="" id="" cols="80" rows="10"></textarea><br>
-    <button>Responder</button>
+  <label>Responder</label><br>
+  <textarea name="contenido" [(ngModel)]='respuestaC.contenido' cols="80" rows="10"></textarea><br>
+  <button type="button" (click)='responder()'> Responder </button>
 </section>
